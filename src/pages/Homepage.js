@@ -88,7 +88,7 @@ import HamburgerMenu from "../UI/SideDrawer/HamburgerMenu/Hamburger";
     };
 
 
-    const sideBarHandler = ()=> {
+    const sideBarHandler = () => {
         setOpenSideBar(!openSideBar);
     }
 

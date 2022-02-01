@@ -114,7 +114,6 @@ import { useRecipes } from '../context/AuthContext';
                 </div>
             </div>
 
-            {/* ingredients card */}
             <div className="ingredients-card">
                 {ingredients.length > 0 && <img src={ingredients[0].recipe.image} alt="img" />}
                 <h5>Item : {ingredients.length > 0 && ingredients[0].recipe.label}</h5>

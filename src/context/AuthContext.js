@@ -9,6 +9,7 @@ import axios from 'axios';
     export function RecipeProvider({ children }) {
         const [recipeData, setRecipeData] = useState([]);
         const [error, setError] = useState('');
+
         async function reload(formData) {
              try {
                 let res = await axios(`https://api.edamam.com/api/recipes/v2?type=public&q=${formData?.recipe}&app_id=bc276825&app_key=9e1436b660669fc26647cc40b15a5c85&health=${formData?.dietary}`)
